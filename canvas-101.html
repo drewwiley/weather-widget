@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+<canvas class="the-canvas" height="500px" width="500px">
+<!-- CANVAS CANNOT DRAW. Canvas is  an empty pallete on which to draw. Our stuff is going to go here -->
+
+</canvas>
+
+<script type="text/javascript">
+var canvas = document.getElementsByClassName('the-canvas')[0];
+var context = canvas.getContext('2d');
+
+	// context.beginPath();
+	// context.moveTo(100,100); 
+	// context.lineTo(200,200);
+	// context.lineTo(300,100);
+	// context.lineTo(100,200)
+	// context.lineTo(300,150);
+	// context.lineTo(100,100);
+	// context.moveTo(500,200); 
+	// context.lineTo(500,100); 
+	// context.strokeStyle = "purple";
+	// context.stroke();
+
+
+	//Draw a circle
+	// context.beginPath();
+	// context.fillStyle = "#FFFF00"
+	// context.arc(175,175,50, 0.25*Math.PI, 1.75*Math.PI)
+	// context.fill();
+
+	// //Draw a rectangle
+	// context.rect(300, 20, 100, 100);
+	// context.stroke();
+
+
+	var x = 100;
+	var y = 100;
+	var radius = 20;
+	var endArc = 2;
+	var r = 0;
+	var g = 0;
+	var b = 0;
+
+	function draw(){
+		context.fillStyle = "#" + r + g + b;
+		context.beginPath();
+		// context.clearRect(0,0,1500,400)
+		context.arc(x, y, radius, 0, endArc*Math.PI)
+	context.fill();
+	// x += 4;
+	// y += 2;
+	// radius += 1;
+	// endArc  += .1;
+	// r += 1;
+	// g += 2;
+
+	// Second circle
+	context.fillStyle = "#" + r + g + b;
+		context.beginPath();
+		// context.clearRect(0,0,1500,400)
+		context.arc(300, 100, radius, 0, endArc*Math.PI)
+	context.fill();
+
+	//Draw rectangle
+	context.rect(100, 0, 200, 100);
+	context.stroke();
+
+
+
+	}
+draw();
+	// var ball = setInterval(draw, 40);
+	// $(document).ready((){
+	// $('.the-canvas').click(function(){
+	// $('.the-canvas').css(translateX, 400px);
+
+// });
+</script>
+	
+</body>
+</html>

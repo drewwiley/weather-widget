@@ -1,0 +1,19 @@
+.current-city {
+	text-align: center;
+	font: bold 20px Georgia, sans-serif;
+	
+}
+
+
+.weather-form {
+	text-align: center;
+}
+
+.container {
+	background-color: skyblue;
+}
+
+.days {
+	display: inline-block;
+	background-color: blue;
+}
